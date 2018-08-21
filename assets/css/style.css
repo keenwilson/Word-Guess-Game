@@ -1,0 +1,78 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    color: white;
+}
+
+h1 {
+    letter-spacing: 9px;
+    color: white;
+    font-size: 5rem;
+}
+
+h3 {
+    letter-spacing: 9px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.backgroundimg {
+    background-repeat: no-repeat;
+    background-image: url(../images/background-img-yatch.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+}
+
+
+.destination {
+    overflow: hidden;
+    max-width: 50%;
+    height: 190px;
+}
+
+.separator-holder {
+    text-align: center;
+    margin: 30px 0 25px;
+    position: relative;
+    height: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.separator {  
+    margin: 10px 0;
+    border-bottom: 1px solid #fff;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    transition: width .5s ease;
+    width: 92px;
+}
+
+.separator-dark {
+    border-bottom: 1px solid #565656;
+}
+
+#letterAlreadyGuess,
+#remainingGuess,
+#secretWord,
+#numberOfWins {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #565656;
+}
