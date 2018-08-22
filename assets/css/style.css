@@ -24,6 +24,14 @@ p {
     color: white;
 }
 
+#current-word {
+    font-size: 2rem; 
+}
+
+#letters-guessed {
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgb(1,20,59);
+}
 .backgroundimg {
     background-repeat: no-repeat;
     background-image: url(../images/background-img-yatch.jpg);
@@ -77,11 +85,9 @@ p {
     color: #565656;
 }
 
-.message-win{
-
-}
-
-.message-congrats {
-    text-shadow: 0 0 20px rgb(75, 90, 94), 1px 1px 20px rgb(75, 90, 94), 2px 2px 20px rgb(75, 90, 94), -1px -1px 20px rgb(75, 90, 94), -2px -2px 20px rgb(75, 90, 94);
+.message-congrats,
+.message-gameover {
+    text-shadow: 0 0 20px rgb(54, 78, 126), 1px 1px 20px rgb(54, 78, 126), 2px 2px 20px rgb(54, 78, 126), -1px -1px 20px rgb(54, 78, 126), -2px -2px 20px rgb(54, 78, 126);
     font-weight: 600;
 }
+

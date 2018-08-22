@@ -44,6 +44,7 @@ function setup() {
     win: 'You win! I knew you could do it.',
     lose: 'Game Over!',
     correct: 'Nice going! Keep it up.',
+    wrong: 'You’re on the right track. Try again.',
     guessed: 'Already guessed, please try again',
     validLetter: 'Please enter a letter from A-Z',
     congrats: "Congratulations! You've completed this word guess challenge!"
@@ -144,6 +145,7 @@ function gameRound() {
           return item.toUpperCase();
         });
         lettersGuessedDisplay.innerHTML = letterGuessedUppercase.join(" ");
+        output.innerHTML = messages.wrong;
         lives--;
         remainingGuesses.innerHTML = lives;
         if (lives === 0) {
@@ -158,6 +160,12 @@ function gameRound() {
     }
   };
 };
+
+// function to capitalize first letter
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 
 // function to prompt for new game
 function endGame(won) {
@@ -177,7 +185,9 @@ function endGame(won) {
     }
 
   } else {
-    output.innerHTML = messages.lose + " The correct answer was " + currentWord + ".";
+    output.setAttribute("class", "message-gameover");
+    console.log(capitalizeFirstLetter(currentWord));
+    output.innerHTML = messages.lose + " The correct answer was " + capitalizeFirstLetter(currentWord) + ".";
     document.onkeyup = function () {
       /* Remove an effect from .onkeyup
       User can no longer type anything more. Game over! */
