@@ -76,3 +76,12 @@ p {
     font-weight: 300;
     color: #565656;
 }
+
+.message-win{
+
+}
+
+.message-congrats {
+    text-shadow: 0 0 20px rgb(75, 90, 94), 1px 1px 20px rgb(75, 90, 94), 2px 2px 20px rgb(75, 90, 94), -1px -1px 20px rgb(75, 90, 94), -2px -2px 20px rgb(75, 90, 94);
+    font-weight: 600;
+}
