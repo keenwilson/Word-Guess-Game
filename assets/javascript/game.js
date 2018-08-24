@@ -11,7 +11,7 @@ currentDestinationImage = document.getElementById('destination-picture');
 countryNameDisplay = document.getElementById('country-name');
 
 
-// declare variables with start config options
+// declare variables when game starts
 function setup() {
   availableLetters = "abcdefghijklmnopqrstuvwxyz";
   wins = 0;
@@ -39,6 +39,7 @@ function setup() {
     "indonesia"
   ];
 
+  // create messages to interact with users via output.innerHTML
   messages = {
     start: 'Press any key to get started!',
     win: 'You win! I knew you could do it.',
@@ -50,17 +51,11 @@ function setup() {
     congrats: "Congratulations! You've completed this word guess challenge!"
   };
 
-  numOfWins.innerHTML = wins;
-  remainingGuesses.innerHTML = lives;
-  lettersGuessedDisplay.innerHTML = lettersGuessedArray.join(" ");
-  output.innerHTML = messages.start;
-
 }; // End setup function
 
-/* start game */
-window.onload = setup();
-
+// create a function to randomly choose a word with
 function newWord() {
+  // set values that are displayed on the browser to default
   answerArray = [];
   lettersGuessedArray = [];
   lettersGuessed = lettersMatched = '';
@@ -86,6 +81,8 @@ function newWord() {
   gameRound();
 };
 
+/* Once the window is loaded, run setup(); and newWord(); to start game */
+window.onload = setup();
 window.onload = newWord();
 
 function gameRound() {
@@ -179,8 +176,9 @@ function endGame(won) {
         User can no longer type anything more. */
       }
     } else {
-      // Start new word for user to keep playing
+      // say You Win!
       output.innerHTML = messages.win;
+      // randomly choose a new word for user to keep playing
       newWord();
     }
 
