@@ -40,4 +40,4 @@ function capitalizeFirstLetter(string) {
 * User HTML DOM `.setAttribute()` method to set the attribute to an element and give it  the specificed value
 ---
 ## Author
-[Keen Wilson](https://github.com/keenwilson/keenwilson.github.io "Keen Wilson's Portfolio")
+[Keen Wilson](https://keenwilson.github.io/ "Keen Wilson's Portfolio")
