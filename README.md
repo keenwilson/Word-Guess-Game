@@ -12,15 +12,19 @@ Words that user has to guess are country names of *destinations* around the worl
 * The app randomly picks a word, and the user has to guess which word the app choose by entering correct letters.
 * At the begining of the game, the user will receive **20 guesses** to play, as shown under *Number of Guesses Remaining*.
 
-![Welcome the user and random a word](./assets/screenshots/screenshot-showalreadyguessed.png)
+![Letters already guessed](./assets/screenshots/screenshot-showalreadyguessed.png)
 * If the user missed the correct letters, the browser will display the letters guessed under *Letters Already Guessed*.
 
+![Correct guess](./assets/screenshots/screenshot-showcorrectguess.png)
 * The user wins when the word has been guessed correctly. The browser will
     * update *the number of wins*
     * display *the destination picture* of current word
     * reveal *the text of current word* under the destination picture
+    * automatically chooses another word for the user to play
 
-* Afther the user wins, the game automatically chooses another word and make the user play it. When the user completes all the word guess challenge, the game displays *a stylized congratulations message*.
+![Game over](./assets/screenshots/screenshot-screenshot-gameover.png)
+. When the user completes all the word guess challenge, the game displays *a stylized congratulations message*.
+* When the user's *Number of Guesses Remaining* is reduced to zero, the user loses and the game displays *a game over message*.s
 
 ## Technical Approach
 * Create a clean modern-looking layout with `HTML5` and `CSS Bootstrap` framework
