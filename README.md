@@ -8,10 +8,11 @@ Words that user has to guess are country names of *destinations* around the worl
 
 ## How This Application Works
 
+![Welcome the user and random a word](./assets/screenshots/screenshot-startgame.png)
 * The app randomly picks a word, and the user has to guess which word the app choose by entering correct letters.
-
 * At the begining of the game, the user will receive **20 guesses** to play, as shown under *Number of Guesses Remaining*.
 
+![Welcome the user and random a word](./assets/screenshots/screenshot-showalreadyguessed.png)
 * If the user missed the correct letters, the browser will display the letters guessed under *Letters Already Guessed*.
 
 * The user wins when the word has been guessed correctly. The browser will
