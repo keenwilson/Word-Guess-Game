@@ -22,7 +22,7 @@ Words that user has to guess are country names of *destinations* around the worl
     * reveal *the text of current word* under the destination picture
     * automatically chooses another word for the user to play
 
-![Game over](./assets/screenshots/screenshot-screenshot-gameover.png)
+![Game over](./assets/screenshots/screenshot-gameover.png)
 . When the user completes all the word guess challenge, the game displays *a stylized congratulations message*.
 * When the user's *Number of Guesses Remaining* is reduced to zero, the user loses and the game displays *a game over message*.s
 
@@ -30,7 +30,14 @@ Words that user has to guess are country names of *destinations* around the worl
 * Create a clean modern-looking layout with `HTML5` and `CSS Bootstrap` framework
 * Use variables, arrays, loops, and conditionals in `JavaScript` to create a simple word guessing game
 * Use the `document.onkeyup()` function to collect input from the user's keyboard
-
+* Create a function to capitalize the first letter of the word for display
+```
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+```
+* Use HTML DOM `.innerHTML`  property to change the HTML content
+* User HTML DOM `.setAttribute()` method to set the attribute to an element and give it  the specificed value
 ---
 ## Author
 [Keen Wilson](https://github.com/keenwilson/keenwilson.github.io "Keen Wilson's Portfolio")
